@@ -1,0 +1,13 @@
+<div class="angular-popup plugin">
+  <div id="popup-form" name="popup-form" class="popup-form">
+    <div class="popup-header">{{title}}</div>
+    <div class='popup-body'>
+      <ng-content></ng-content>
+    </div>
+    <div class="footer">
+      <input type="text" name="text" value="" style="display:none;" />
+      <button *ngIf="!hideSubmit" (click)="okAction($event)" class="btn" name="submit">Ok</button>
+      <button type="button" *ngIf="!hideCancel" (click)="cancelAction($event)" class="btn">Cancel</button>
+    </div>
+  </div>
+</div>

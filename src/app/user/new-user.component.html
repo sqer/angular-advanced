@@ -1,0 +1,19 @@
+<form name="addUser" (ngSubmit)="fau.form.valid && addUser()" #fau="ngForm" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': fau.submitted && !name.valid }">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" [(ngModel)]="user.name" #name="ngModel" required="true" maxlength="40"
+        />
+        <div *ngIf="fau.submitted && !name.valid" class="help-block">
+            Name is required
+        </div>
+    </div>
+    <div>
+        <button class="btn" name="submit">Add user</button>
+    </div>
+</form>
+
+<!-- TODO 
+
+Implement full form based on example
+
+-->

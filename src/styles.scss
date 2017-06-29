@@ -1,0 +1,120 @@
+$popup-text-color: #787878;
+$popup-popup-header-radius: 0;
+$popup-popup-header-font-weight: 300;
+$popup-popup-header-font-size: 20px;
+$popup-popup-header-background: #5A5A5A;
+$popup-popup-header-text-color: #FFF;
+$popup-popup-header-border-bottom: none;
+$popup-popup-form-radius: 0;
+
+.angular-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: $popup-text-color;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-weight: normal;
+  z-index: 10000;
+  border: none;
+  /* display content vertically, with flex box */
+  display: -webkit-box;
+  -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-align: center;
+  display: -ms-box;
+  -ms-box-align: center;
+  display: flex;
+  box-align: center;
+}
+
+iframe.angular-popup {
+  display: table;
+  filter: alpha(Opacity=20);
+}
+
+.angular-popup~*:not(.angular-popup) {
+  -webkit-filter: blur(2px);
+}
+
+.angular-popup .popup-form {
+  margin: 5% auto;
+  /* display:table seems to work at positioning horizontally in all but IE, however it means we can't use IE filters*/
+  display: table;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.angular-popup .popup-form .popup-header {
+  font-weight: $popup-popup-header-font-weight;
+  background: $popup-popup-header-background;
+  color: $popup-popup-header-text-color;
+  border-radius: $popup-popup-header-radius;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  text-align: left;
+  font-size: $popup-popup-header-font-size;
+  margin-bottom: 15px;
+  border-bottom: $popup-popup-header-border-bottom;
+}
+
+.angular-popup .popup-form .popup-body {
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.angular-popup .popup-form {
+  text-align: left;
+  background-color: #FFF;
+  max-width: 100%;
+  min-width: 490px;
+  border-radius: $popup-popup-form-radius;
+  box-shadow: 0 20px 60px black;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+  padding: 0;
+  position: relative;
+}
+
+.angular-popup .popup-form .form-group {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.angular-popup .popup-form .footer,
+.angular-popup .popup-form>*,
+.angular-popup .popup-form h1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.angular-popup .popup-form .footer {
+  border-top: 1px solid #B4B4B4;
+  padding-bottom: 20px;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.angular-popup .popup-form .footer button {
+  margin-right: 10px;
+}
+
+.angular-popup input[type="text"] {
+  width: 100%;
+  font-size: inherit;
+  margin-top: 10px;
+}
+
+.angular-popup .note-check {
+  .checkbox {
+    display: block;
+  }
+}
