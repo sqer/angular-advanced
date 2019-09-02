@@ -1,3 +1,3 @@
-export class MenuLink{
-    
+export class MenuLink {
+
 }

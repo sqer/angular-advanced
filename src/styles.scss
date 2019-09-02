@@ -38,7 +38,7 @@ iframe.angular-popup {
   filter: alpha(Opacity=20);
 }
 
-.angular-popup~*:not(.angular-popup) {
+.angular-popup ~ *:not(.angular-popup) {
   -webkit-filter: blur(2px);
 }
 
@@ -88,7 +88,7 @@ iframe.angular-popup {
 }
 
 .angular-popup .popup-form .footer,
-.angular-popup .popup-form>*,
+.angular-popup .popup-form > *,
 .angular-popup .popup-form h1 {
   padding-left: 20px;
   padding-right: 20px;

@@ -2,20 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { LoggedUser } from './loggedUser';
 
 @Component({
-    selector: 'login',
-    templateUrl: 'login.component.html'
+  selector: 'login',
+  templateUrl: 'login.component.html'
 })
 
 export class LoginComponent implements OnInit {
-    constructor() { }
+  constructor() {
+  }
 
-    ngOnInit() { }
+  ngOnInit() {
+  }
 
-    login():LoggedUser{
-        // TODO implement function
+  login(): LoggedUser {
+    // TODO implement function
 
-        
-
-        return null;
-    }
+    return null;
+  }
 }

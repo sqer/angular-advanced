@@ -4,39 +4,40 @@ import { User } from './user';
 @Injectable()
 export class UserService {
 
-    users: User[] = [];
+  users: User[] = [];
 
-    constructor() { }
+  constructor() {
+  }
 
-    //TODO implement function
-    addUser(user) {
+  //TODO implement function
+  addUser(user) {
 
-    }
+  }
 
-    //TODO implement function
-    editUser(user, newUser) {
+  //TODO implement function
+  editUser(user, newUser) {
 
-    }
+  }
 
-    //TODO implement function
-    deleteUser(user) {
+  //TODO implement function
+  deleteUser(user) {
 
-    }
+  }
 
-    //TODO implement function
-    getUsers(): User[] {
-        return [];
-    }
+  //TODO implement function
+  getUsers(): User[] {
+    return [];
+  }
 
-    // use fetch() to get data from file users.db.json
-    // Promise !! 
-    getUsersFromFile(): User[] {
-        return [];
-    }
+  // use fetch() to get data from file users.db.json
+  // Promise !!
+  getUsersFromFile(): User[] {
+    return [];
+  }
 
-    // use http to get data from rest
-    getUsersFromRest(){
+  // use http to get data from rest
+  getUsersFromRest() {
 
-    }
+  }
 
 }

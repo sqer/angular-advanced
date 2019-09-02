@@ -1,24 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'new-user',
-    templateUrl: 'new-user.component.html'
+  selector: 'new-user',
+  templateUrl: 'new-user.component.html'
 })
 
 export class NewUserComponent implements OnInit {
 
-    // inject user service
-    constructor() { }
+  // inject user service
+  constructor() {
+  }
 
-    ngOnInit() { }
+  ngOnInit() {
+  }
 
-    /**
-     * TODO 
-     * 
-     * User page should display form with min: name, surname, username
-     * 
-     */
+  /**
+   * TODO
+   *
+   * User page should display form with min: name, surname, username
+   *
+   */
 
-      addUser(): void {
-      }
+  addUser(): void {
+  }
 }

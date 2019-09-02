@@ -3,13 +3,14 @@ import { ActivatedRouteSnapshot, CanActivate, RouterStateSnapshot } from '@angul
 
 @Injectable()
 export class UserGuard implements CanActivate {
-    constructor() { }
+  constructor() {
+  }
 
-    /**
-     * Implement method, only logged user can active page
-     * 
-     */
-    canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
-        return true;
-    }
+  /**
+   * Implement method, only logged user can active page
+   *
+   */
+  canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
+    return true;
+  }
 }

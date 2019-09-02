@@ -1,3 +1,3 @@
-export class User{
-    //TODO implement class user
+export class User {
+  //TODO implement class user
 }

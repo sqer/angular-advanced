@@ -4,19 +4,20 @@ import { LoggedUser } from './loggedUser';
 @Injectable()
 export class AuthService {
 
-    user: LoggedUser;
+  user: LoggedUser;
 
-    constructor() { }
+  constructor() {
+  }
 
-    logIn(){
+  logIn() {
 
-    }
+  }
 
-    getLoggedUser():LoggedUser{
-        return null;
-    }
+  getLoggedUser(): LoggedUser {
+    return null;
+  }
 
-    isLoggedUser(): boolean {
-        return false;
-    }
+  isLoggedUser(): boolean {
+    return false;
+  }
 }

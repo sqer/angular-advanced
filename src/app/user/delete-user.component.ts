@@ -1,9 +1,9 @@
-import {Component, EventEmitter, Input, Output} from "@angular/core";
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { User } from './user';
 
 @Component({
   selector: 'delete-user',
-    templateUrl: 'delete-user.component.html'
+  templateUrl: 'delete-user.component.html'
 })
 export class DeleteUserComponent {
 
