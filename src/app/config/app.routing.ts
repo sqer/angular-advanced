@@ -1,4 +1,3 @@
-import { ModuleWithProviders } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { UserGuard } from '../guard/user.guard';
 import { HomeComponent } from '../home/home.component';
@@ -12,4 +11,4 @@ export const routes: Routes = [
   { path: '**', component: PageNotFoundComponent }
 ];
 
-export const routing: ModuleWithProviders = RouterModule.forRoot(routes);
+export const routing = RouterModule.forRoot(routes);
